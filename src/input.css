@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* color variables */
+
+@layer base {
+  :root {
+    --color-bgpri: 243 243 234;
+    --color-txtpri: 6 12 3;
+    --color-sec1: 31 38 5;
+    --color-sec2: 31 101 33;
+    --color-accent1: 83 144 15;
+    --color-accent2: 164 167 30;
+    --color-accent3: 214 206 21;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-bgpri: 6 12 3;
+      --color-txtpri: 243 243 234;
+      --color-sec1: 31 38 5;
+      --color-sec2: 31 101 33;
+      --color-accent1: 83 144 15;
+      --color-accent2: 164 167 30;
+      --color-accent3: 214 206 21;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --color-bgpri: 6 12 3;
+    --color-txtpri: 243 243 234;
+    --color-sec1: 31 38 5;
+    --color-sec2: 31 101 33;
+    --color-accent1: 83 144 15;
+    --color-accent2: 164 167 30;
+    --color-accent3: 214 206 21;
+  }
+
+  .btn {
+    @apply px-6 py-3 text-xl uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-300;
+  }
+ 
+}
