@@ -701,20 +701,8 @@ video {
   margin-top: 5rem;
 }
 
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[7rem\] {
-  margin-top: 7rem;
-}
-
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-2 {
@@ -737,8 +725,8 @@ video {
   height: 550px;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[85vh\] {
+  height: 85vh;
 }
 
 .h-\[90\%\] {
@@ -751,15 +739,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-\[85vh\] {
-  height: 85vh;
 }
 
 .w-10\/12 {
@@ -790,6 +769,10 @@ video {
   width: 30vw;
 }
 
+.w-\[3rem\] {
+  width: 3rem;
+}
+
 .w-\[500\%\] {
   width: 500%;
 }
@@ -813,34 +796,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[full\] {
-  width: full;
-}
-
-.w-\[6rem\] {
-  width: 6rem;
-}
-
-.w-\[3rem\] {
-  width: 3rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-\[4rem\] {
-  width: 4rem;
-}
-
-.w-\[2rem\] {
-  width: 2rem;
-}
-
-.w-\[2\.5rem\] {
-  width: 2.5rem;
 }
 
 .flex-none {
@@ -895,6 +850,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -909,14 +868,6 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -974,8 +925,8 @@ video {
   background-color: rgb(var(--color-bgpri) / var(--tw-bg-opacity));
 }
 
-.bg-bgpri\/80 {
-  background-color: rgb(var(--color-bgpri) / 0.8);
+.bg-bgpri\/50 {
+  background-color: rgb(var(--color-bgpri) / 0.5);
 }
 
 .bg-black\/20 {
@@ -1011,15 +962,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-bgpri\/50 {
-  background-color: rgb(var(--color-bgpri) / 0.5);
 }
 
 .bg-\[radial-gradient\(ellipse_60\%_60\%_at_50\%_-10\%\2c rgba\(164\2c 167\2c 30\2c 0\.5\)\2c rgba\(255\2c 255\2c 255\2c 0\)\)\] {
@@ -1278,10 +1220,6 @@ video {
   transition-duration: 700ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 /* color variables */
 
 .placeholder\:text-accent-3\/20::-moz-placeholder {
@@ -1325,10 +1263,6 @@ video {
 .active\:bg-gray-100:active {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:block {
-  display: block;
 }
 
 .group:hover .group-hover\:translate-x-0 {
