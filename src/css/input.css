@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --color-bgpri: 243 243 234;
+    --color-bgpri: 243 243 243;
     --color-txtpri: 6 12 3;
     --color-sec1: 31 38 5;
     --color-sec2: 31 101 33;
@@ -16,7 +16,7 @@
     --color-accent3: 214 206 21;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root {
       --color-bgpri: 6 12 3;
       --color-txtpri: 243 243 234;
@@ -26,9 +26,19 @@
       --color-accent2: 164 167 30;
       --color-accent3: 214 206 21;
     }
-  }
+  } */
 
-  :root[data-theme="dark"] {
+  /* :root[data-theme="dark"] {
+    --color-bgpri: 6 12 3;
+    --color-txtpri: 243 243 234;
+    --color-sec1: 31 38 5;
+    --color-sec2: 31 101 33;
+    --color-accent1: 83 144 15;
+    --color-accent2: 164 167 30;
+    --color-accent3: 214 206 21;
+  } */
+
+  .dark{
     --color-bgpri: 6 12 3;
     --color-txtpri: 243 243 234;
     --color-sec1: 31 38 5;
