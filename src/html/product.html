@@ -53,10 +53,6 @@
 
     <div class="h-[80vh] overflow-hidden relative bg-gradient-to-b from-white to-transparent" style="-webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient(black, transparent);">
-      <div class="text-[4rem] flex justify-center text-accent-2/50">
-        <i class="bi bi-play-fill absolute top-[50%]"></i>
-        <i class="bi bi-pause-fill absolute top-[50%] hidden"></i>
-      </div>
       <video controls class="w-full">
         <source src="/movie poster/GOL/Gangs Of Lagos - Full Trailer.mp4"  type="video/mp4">
       </video>
@@ -64,11 +60,14 @@
 
     <main class="relative top-[-100px] w-[85%] mx-auto">
        <!-- Movie page hero section -->
-    <div class="grid grid-cols-4 grid-rows-1 gap-8 border-b-4">
+    <div class="grid grid-cols-4 grid-rows-1 gap-8">
 
       <!-- First colum containing movie poster, where to watch and watchlist -->
       <div class="col-span-1 flex flex-col gap-8 ">
-       <img src="/movie poster/Gangs of lagos.jpeg" alt="Movie poster" class="rounded-md shadow-md shadow-accent-3/40">
+        <div class="w-full overflow-hidden rounded-md shadow-md shadow-accent-3/40">
+          <img src="/movie poster/Gangs of lagos.jpeg" alt="Movie poster" class="w-full hover:scale-125 transition-all duration-500">
+        </div>
+       
        <button class="btn">
         <i class="bi bi-heart-fill text-xl mr-2"></i> <span>Like</span>
        </button>
@@ -78,20 +77,20 @@
       </div>
       <div class="col-span-2">
        <h2 class="text-3xl font-bold text-accent-1 uppercase">Gang of Lagos</h2>
-       <div class="border-y-2 border-accent-3/30 p-4  my-4 flex gap-7 text-txtpri/70 text-sm">
-         <div class="text-yellow-500">
+       <div class="border-y-2 border-accent-3/30 p-4  my-4 flex gap-7 text-txtpri/50 text-sm ">
+         <div class="text-accent-2">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
         </div>
-         <span class="upper">PG-16</span>
-         <span class="uppercase ">action | Thriller</span>
-         <span class="">2023</span>
+         <span class="font-semibold hover:text-accent-2 hover:scale-105 transition-all duration-300 cursor-default">PG-16</span>
+         <span class="uppercase font-semibold hover:text-accent-2 hover:scale-105 transition-all duration-300 cursor-default">action | Thriller</span>
+         <span class="font-semibold hover:text-accent-2 hover:scale-105 transition-all duration-300 cursor-default">2023</span>
          <img src="/movie poster/Logos/AMAA.png" alt="Africa movie academy awards" class="h-6">
        </div>
-       <div class="flex  justify-between">
+       <div class="grid grid-cols-2 gap-12">
          <div class="text-txtpri flex flex-col gap-6">
            <p class="1"><span class="font-bold mr-2">Director:</span> Jadesola Osiberu</p>
            <p class="1"><span class="font-bold mr-2">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
@@ -101,45 +100,56 @@
            <p class="1"><span class="font-bold mr-2">Duration:</span>2h 4m</p>
 
            <div class="text-sec-2 mt-12">
-            <h3 class="text-[#f3f3f3] text-base font-bold my-3">Where to watch:</h3>
-            <div class="flex" >
-              <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root"><img src="/movie poster/Logos/Prime video.png" alt="Prime Video logo" width="150px"></a>
-              <a href="https://www.showmax.com"><img src="/movie poster/Logos/showmax.png" alt="Prime Video logo" width="150px"></a>
+            <h3 class="text-txtpri text-base font-bold my-3">Where to watch:</h3>
+            <div class="flex gap-4 items-center" >
+              <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class="w-36"><img src="/movie poster/Logos/Prime video.png" alt="Prime Video logo" width="120px" class="hover:scale-110 transition-all duration-300"></a>
+              <a href="https://www.showmax.com" class="w-36"><img src="/movie poster/Logos/showmax.png" alt="Prime Video logo" width="120px" class="hover:scale-110 transition-all duration-300"></a>
             </div>
           </div>
          </div>
          <div class="flex flex-col gap-4">
            <h4 class="text-txtpri font-bold text-xl capitalize ">cast</h4>
-           <div class="flex gap-3">
-             <img src="/movie poster/GOL/tobi_bakre.png" alt="Tobi Bakare" class="h-16 w-16 rounded-full border-2 border-accent-1">
+           <div class="flex gap-3 items-center">
+            <div class="h-16 w-16 rounded-full border-2 border-accent-1 overflow-hidden  ">
+              <img src="/movie poster/GOL/tobi_bakre.png" alt="Tobi Bakare" class="h-16 w-16 hover:scale-110 transition-all duration-300 object-cover object-center">
+            </div>
+             
              <div class="flex flex-col gap-1">
               <h5 class="text-txtpri"> Tobi Bakare</h5>
-              <span class="text-accent-2 uppercase text-sm font-semibold">Obalola</span>
+              <span class="text-accent-2 uppercase text-xs font-semibold">Obalola</span>
              </div>
            </div>
-           <div class="flex gap-3">
-             <img src="/movie poster/GOL/Adesuwa_etomi.png" alt="Adesuwa Etomi" class="h-16 w-1n rounded-full border-2 border-accent-1">
+           <div class="flex gap-3 items-center">
+            <div class="h-16 w-16 rounded-full border-2 border-accent-1 overflow-hidden ">
+              <img src="/movie poster/GOL/Adesuwa_etomi.png" alt="Tobi Bakare" class="h-16 w-16 hover:scale-110 transition-all duration-300 object-cover object-center">
+            </div>
              <div class="flex flex-col gap-1">
                <h5 class="text-txtpri"> Adesuwa Etomi</h5>
                 <span class="text-accent-2 uppercase text-sm font-semibold">Gift</span>
              </div>
            </div>
-           <div class="flex gap-3">
-             <img src="/movie poster/GOL/chike.png" alt="Chike Osebuka" class="h-16 w-16 rounded-full border-2 border-accent-1">
+           <div class="flex gap-3 items-center">
+            <div class="h-16 w-16 rounded-full border-2 border-accent-1 overflow-hidden ">
+              <img src="/movie poster/GOL/chike.png" alt="Tobi Bakare" class="h-16 w-16 hover:scale-110 transition-all duration-300 object-cover object-center">
+            </div>
              <div class="flex flex-col gap-1">
               <h5 class="text-txtpri"> Chike Osebuka</h5>
                 <span class="text-accent-2 uppercase text-sm font-semibold">Ify</span>
              </div>
            </div>
-           <div class="flex gap-3">
-             <img src="/movie poster/GOL/chioma.png" alt="Chioma Akpotha" class="h-16 w-16 rounded-full border-2 border-accent-1">
+           <div class="flex gap-3 items-center">
+            <div class="h-16 w-16 rounded-full border-2 border-accent-1 overflow-hidden ">
+              <img src="/movie poster/GOL/chioma.png" alt="Tobi Bakare" class="h-16 w-16 hover:scale-110 transition-all duration-300 object-cover object-center">
+            </div>
              <div class="flex flex-col gap-1">
               <h5 class="text-txtpri"> Chioma Akpotha</h5>
                 <span class="text-accent-2 uppercase text-sm font-semibold">Mama Ify</span>
              </div>
            </div>
-           <div class="flex gap-3">
-             <img src="/movie poster/GOL/Tayo.png" alt="Tayo Faniran" class="h-16 w-16 rounded-full border-2 border-accent-1">
+           <div class="flex gap-3 items-center">
+            <div class="h-16 w-16 rounded-full border-2 border-accent-1 overflow-hidden ">
+              <img src="/movie poster/GOL/Tayo.png" alt="Tobi Bakare" class="h-16 w-16 hover:scale-110 transition-all duration-300 object-cover object-center">
+            </div>
              <div class="flex flex-col gap-1">
               <h5 class="text-txtpri"> Tayo Faniran</h5>
                 <span class="text-accent-2 uppercase text-sm font-semibold">Nino</span>
@@ -148,26 +158,28 @@
          </div>
        </div>
       </div>
-      <div class="col-span-1">
-       <h4 class="2">Gallery</h4>
-       <div class="1">
-         <img src="" alt="Gallery Image">
-         <div class="3"><button>Indicators or tabs</button>
-           <button>Indicators or tabs</button>
-           <button>Indicators or tabs</button>
-           <button>Indicators or tabs</button>
-           <button>Indicators or tabs</button>
-         </div>
+      <div class="col-span-1 ">
+       <h4 class="text-2xl text-accent-2 font-bold mb-5">Gallery</h4>
+       <div class="img-container flex flex-col gap-4 h-[80vh] overflow-y-scroll [scrollbar-color:#1f2605]" style="scrollbar-width: thin; scrollbar-color: #1f2605 #060c03;" >
+         <img src="/movie poster/GOL/Img1.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
+         <img src="/movie poster/GOL/img2.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
+         <img src="/movie poster/GOL/img3.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
+         <img src="/movie poster/GOL/img4.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
+         <img src="/movie poster/GOL/img5.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
+         <img src="/movie poster/GOL/img6.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
+         <img src="/movie poster/GOL/img7.png" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
        </div>
       </div>
      </div>
  
-     <!-- Plot, Revies and Advert or news -->
-      <div class="1">
-       <div class="2">
-         <div class="3">
-           <h3 class="w">Plot</h3>
-           <p class="">
+     <!-- Plot, Reviews and Advert or news -->
+      <div class="grid grid-cols-4 mt-24 gap-8">
+
+        <!-- Plot and reviews container -->
+       <div class="col-span-3">
+         <div class="">
+          <h2 class="w-3/5 text-txtpri text-2xl uppercase py-5 font-bold border-b-4 border-accent-1">plot</h2>
+           <p class="text-txtpri/70 text-justify mt-5 ">
              Gangs of Lagos is about a group of friends whose lives have revolved around crime and violence since their childhood in the Isale Eko area of Lagos, Nigeria. A young boy, Obalola, robs a bag from a woman in traffic with his friend, an act which results in a summons from the king of the streets, known as "Eleniyan" or "Owner of Men", who lauds his confidence and ability. Amazed by his intellect and courage, a gang leader named 'Nino' (played by Tayo Faniran) shows interest and immediately becomes a father figure to him. Nino, though, wants him to go to school and become something great in life.<br>
  
              Unfortunately, Nino is later found dead, and the dreams he had for Obalola (Tobi Bakre) and his friends Ify (Chike) and Gift (Adesua Etomi) have died with him, as the trio begin to work for his partner Kazeem (Olarotimi Fakunle), a greedy and ruthless leader.<br>
@@ -175,16 +187,263 @@
              As adults, they continue to play different roles in the gang, until things go sideways when Kazeem murders a rival gang member and pins it on Ify, which results in his gruesome murder. With Ify's surviving friends hellbent on revenge, Obalola discovers several skeletons in Kazeem's closet. Determined to avenge all the loved ones whom Kazeem's greed has taken from him, Oba leads a bloody gang war to seek revenge on Kazeem.
            </p>
          </div>
-         <div class="3">Reviews
- 
+         <div class="mt-16">
+          <h2 class="w-3/5 text-txtpri text-2xl uppercase py-5 font-bold border-b-4 border-accent-1">Reviews</h2>
+          <div class="my-8">
+            <div class="flex flex-col gap-2 my-8">
+              <div class="flex gap-8">
+                <p class="1"><span class="font-bold text-txtpri">Jadesola Osiberu</p>
+                <div class="text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="font-bold text-txtpri mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-txtpri/70 text-justify border-b-2 border-accent-2/20 pb-9 ">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quia obcaecati fugit praesentium reiciendis magnam, dolorum nesciunt commodi molestias similique dolorem illum aliquid nostrum modi laborum, pariatur dolore, cupiditate ullam.
+              </p>
+
+            </div>
+            <div class="flex flex-col gap-2 my-8">
+              <div class="flex gap-8">
+                <p class="1"><span class="font-bold text-txtpri">Jadesola Osiberu</p>
+                <div class="text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+              <p class="font-bold text-txtpri mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-txtpri/70 text-justify border-b-2 border-accent-2/20 pb-9">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quia obcaecati fugit praesentium reiciendis magnam, dolorum nesciunt commodi molestias similique dolorem illum aliquid nostrum modi laborum, pariatur dolore, cupiditate ullam.
+              </p>
+
+            </div>
+            <div class="flex flex-col gap-2 my-8">
+              <div class="flex gap-8">
+                <p class="1"><span class="font-bold text-txtpri">Jadesola Osiberu</p>
+                <div class="text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+              <p class="font-bold text-txtpri mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-txtpri/70 text-justify border-b-2 border-accent-2/20 pb-9">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quia obcaecati fugit praesentium reiciendis magnam, dolorum nesciunt commodi molestias similique dolorem illum aliquid nostrum modi laborum, pariatur dolore, cupiditate ullam.
+              </p>
+
+            </div>
+            <div class="flex flex-col gap-2 my-8">
+              <div class="flex gap-8">
+                <p class="1"><span class="font-bold text-txtpri">Jadesola Osiberu</p>
+                <div class="text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+              </div>
+              <p class="font-bold text-txtpri mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-txtpri/70 text-justify border-b-2 border-accent-2/20 pb-9">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quia obcaecati fugit praesentium reiciendis magnam, dolorum nesciunt commodi molestias similique dolorem illum aliquid nostrum modi laborum, pariatur dolore, cupiditate ullam.
+              </p>
+
+            </div>
+            <div class="flex flex-col gap-2 my-8">
+              <div class="flex gap-8">
+                <p class="1"><span class="font-bold text-txtpri">Jadesola Osiberu</p>
+                <div class="text-yellow-500">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="font-bold text-txtpri mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-txtpri/70 text-justify border-b-2 border-accent-2/20 pb-9">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quia obcaecati fugit praesentium reiciendis magnam, dolorum nesciunt commodi molestias similique dolorem illum aliquid nostrum modi laborum, pariatur dolore, cupiditate ullam.
+              </p>
+            </div>
+            <div class="flex flex-col gap-8">
+              <p class="h3"><span class="text-xl font-bold text-txtpri">Add a review</h3>
+              <div class="star text-yellow-500">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <input type="text" name="" id="" class="text-txtpri bg-transparent border-2 border-accent-2/20 rounded-md px-5 py-2 placeholder:text-accent-2/40 focus:border-accent-2 focus:outline-none" placeholder="Write a headline for your review">
+              <textarea name="" id="" class=" text-txtpri bg-transparent border-2 border-accent-2/20 rounded-md px-5 py-2 placeholder:text-accent-2/40 focus:border-accent-2 focus:outline-none h-32 resize-none" placeholder="Write your review here"></textarea>
+              <button class="btn w-fit self-end">Submit</button>
+            </div>
+          </div>
+
          </div>
        </div>
-       <div class="2">Advert section or news</div>
+       <div class="">
+        <div class="flex flex-col gap-7 sticky top-5">
+          <img src="/movie poster/GOL/coldstone.jpg" alt="" class="">
+          <img src="/movie poster/GOL/mtn.jpeg" alt="" class="">
+        </div>
+       </div>
       </div>
  
       <!-- Recommended movies -->
-       <div class="1">
-         Movie line ups in flex manner
+       <div class="my-8">
+        <h2 class="w-3/5 text-txtpri text-2xl capitalize py-5 font-bold border-b-4 border-accent-1">Recommended movies</h2>
+        <div class="flex gap-5 justify-between overflow-hidden mt-8">
+
+          <!-- card -->
+          <a  href="" class="swiper-slide group relative overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px] flex-none">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Gangs of lagos.jpeg" alt="" class="h-full w-full object-cover object-center group-hover:scale-110  transition-all duration-500 ">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500 h-[300px] w-[210px]"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-2 px-3 text-center translate-y-[100%] group-hover:translate-y-0  transition-transform duration-700 h-[300px] w-[210px]">
+              <h2 class="text-3xl font-bold text-white">Gang of Lagos</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow  h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Azali-gh.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Azali</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Funmilayo.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Funmilayo</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Afamefuna.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Afamefuna</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/brotherhood.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Brotherhood</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4.5/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Unexpected places.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Unexpected Places</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Oloture.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Movie Name</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4.5/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Oloture.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Movie Name</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4.5/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Oloture.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Movie Name</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4.5/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="" class="swiper-slide group relative flex-none overflow-hidden rounded-md hover:shadow-xl hover:shadow-black/30 transition-shadow h-[300px] w-[210px]">
+            <div class="h-[300px] w-[210px]">
+              <img src="/movie poster/Oloture.jpeg" alt="" class="h-full w-full object-cover group-hover:scale-110  transition-all duration-500">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent group-hover:from-black/80 group-hover:via-black/60 group-hover:to-black/80  transition-all duration-500"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center pt-10 gap-4 px-5 text-center translate-y-[100%] group-hover:translate-y-0  transition-all duration-700">
+              <h2 class="text-3xl font-bold text-white">Movie Name</h2>
+              <h3 class="text-xl font-bold text-[#d6ce15]">4.5/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              <h5 class="text-sm font-bold text-white uppercase ">action | drama</h5>
+              <!-- <a href="" class="px-6 py-2 rounded-md text-xl font-bold text-white bg-gradient-to-r from-[#d6ce15] via-[#a4a71e] to-[#53900f]">view</a> -->
+            </div>
+          </a>
+        </div>
        </div>
     </main>
    

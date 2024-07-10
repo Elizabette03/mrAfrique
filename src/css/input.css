@@ -19,7 +19,7 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --color-bgpri: 6 12 3;
-      --color-txtpri: 243 243 234;
+      --color-txtpri: 154 160 166;
       --color-sec1: 31 38 5;
       --color-sec2: 31 101 33;
       --color-accent1: 83 144 15;
@@ -40,7 +40,7 @@
 
   .dark{
     --color-bgpri: 6 12 3;
-    --color-txtpri: 243 243 234;
+    --color-txtpri: 154 160 166;
     --color-sec1: 31 38 5;
     --color-sec2: 31 101 33;
     --color-accent1: 83 144 15;
@@ -58,3 +58,7 @@
  
 }
 
+.card {
+  color: rgb(195, 195, 195);
+  color: rgb(181, 183, 187);
+}
