@@ -20,18 +20,16 @@ module.exports = {
         fine: '2px 4px 10px',
       },
       keyframes: {
-        bganimate: {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' },
+        slider: {
+          'from':{transform: "translateX(0)"},
+          'to':{transform: "translateX(calc(-50% - 1rem))"},
+
         }
       },
 
       animation: {
-        "spin-slower": "spin 45s ease infinite",
-        "spin-slow": "spin 35s ease-in-out infinite reverse",
+        slider: 'slider 50s infinite linear',
 
-        bganimate: 'bganimate 10s ease infinite'
       },
 
 

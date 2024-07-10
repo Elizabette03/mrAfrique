@@ -1,10 +1,10 @@
 
-// Dark Mode toggle switch
-const colorToggle = document.getElementById('color-toggle');
+// // Dark Mode toggle switch
+// const colorToggle = document.getElementById('color-toggle');
 
-colorToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark")
-})
+// colorToggle.addEventListener("click", () => {
+//   document.body.classList.toggle("dark")
+// })
 
 
 // Side Navigation bar
@@ -37,3 +37,28 @@ sidebar.addEventListener("mouseleave", () => {
 //     prevEl: '.swiper-button-prev',
 //   },
 // });
+
+// Infinite scroll
+
+const scroller = document.querySelectorAll(".scroll-container");
+
+
+
+const addElement = () => {
+  scroller.forEach(scroller => {
+    scroller.setAttribute("data-animated", true);
+
+    const scroll = scroller.querySelector(".scroll");
+    const scrollItems = Array.from(scroll.children);
+
+    scrollItems.forEach(item => {
+      const duplicate = item.cloneNode(true);
+      duplicate.setAttribute("aria-hidden", true);
+      scroll.appendChild(duplicate);
+    });
+  });
+}
+
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  addElement();
+}
