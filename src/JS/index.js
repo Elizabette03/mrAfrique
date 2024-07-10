@@ -38,7 +38,32 @@ sidebar.addEventListener("mouseleave", () => {
 //   },
 // });
 
-// Infinite scroll
+// review star
+
+const starContainer = document.querySelector(".star");
+const stars = starContainer.querySelectorAll("i");
+
+let count = 0;
+stars.forEach(star => {
+  star.addEventListener("click", () =>{
+    count += 1;
+    let num = count%2
+
+    if (num === 1 ) {
+      star.classList.remove("bi-star");
+      star.classList.add("bi-star-fill");
+    }
+    else if(num === 0) {
+      star.classList.remove("bi-star-fill");
+      star.classList.add("bi-star");
+    }
+  })
+})
+
+
+
+
+// Infinite scroll duplicate
 
 const scroller = document.querySelectorAll(".scroll-container");
 

@@ -28,7 +28,7 @@ module.exports = {
       },
 
       animation: {
-        slider: 'slider 50s infinite linear',
+        slider: 'slider 100s infinite linear',
 
       },
 

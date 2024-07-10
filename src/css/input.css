@@ -49,7 +49,7 @@
   }
 
   .btn {
-    @apply px-5 py-2 text-base uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-300;
+    @apply px-5 py-2 text-base uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-500;
   }
 
   .hero-btn {

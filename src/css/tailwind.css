@@ -509,7 +509,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 500ms;
 }
 
 .btn:hover {
@@ -1194,7 +1194,7 @@ video {
 }
 
 .animate-slider {
-  animation: slider 50s infinite linear;
+  animation: slider 100s infinite linear;
 }
 
 .cursor-default {
