@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon_io/favicon.ico">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+
+    <!-- Bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- tailwind stylesheet -->
+    <link rel="stylesheet" href="/src/css/tailwind.css">
+    <title>mrAfrique</title>
+  </head>
+  <body class="bg-bgpri">
+     <!-- fixed gradient background -->
+  <div class="fixed top-0 -z-50 h-screen w-screen bg-bgpri dark:bg-[radial-gradient(ellipse_40%_40%_at_50%_50%,rgba(31,38,5,1),rgba(255,255,255,0))]"></div>
+
+  <!-- Fixed sidebar -->
+  <nav id="sidebar" class="h-[100vh] w-[4rem] flex items-center fixed top-0 left-0 my-auto z-50 pl-2 transition-all duration-300 ease-in ">
+    <div id="nav-items" class="flex flex-col text-accent-2/30 transition-all duration-300 ease-in">
+      <div class="w-[3rem]  h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-house-door-fill text-3xl  px-2"></i>
+        <h4 class=" opacity-0 translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Home</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-film text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 text-nowrap py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Browse Movies</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-list-stars text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Watchlist</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-clock-history text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">History</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-heart-fill text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Liked</h4>
+      </div>
+    </div>
+  </nav>
+
+  <div id="to-blur" class="">
+
+    <!-- Trailer container -->
+
+    <div class="h-[80vh] overflow-hidden relative bg-gradient-to-b from-white to-transparent" style="-webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);">
+      <div class="text-[4rem] flex justify-center text-accent-2/50">
+        <i class="bi bi-play-fill absolute top-[50%]"></i>
+        <i class="bi bi-pause-fill absolute top-[50%] hidden"></i>
+      </div>
+      <video controls class="w-full">
+        <source src="/movie poster/GOL/Gangs Of Lagos - Full Trailer.mp4"  type="video/mp4">
+      </video>
+    </div>
+
+    <main class="relative top-[-100px] w-[85%] mx-auto">
+       <!-- Movie page hero section -->
+    <div class="grid grid-cols-4 grid-rows-1 gap-8 border-b-4">
+
+      <!-- First colum containing movie poster, where to watch and watchlist -->
+      <div class="col-span-1 flex flex-col gap-8 ">
+       <img src="/movie poster/Gangs of lagos.jpeg" alt="Movie poster" class="rounded-md shadow-md shadow-accent-3/40">
+       <button class="btn">
+        <i class="bi bi-heart-fill text-xl mr-2"></i> <span>Like</span>
+       </button>
+       <button class="btn">
+        <i class="bi bi-plus-lg text-xl mr-2"></i> <span>Watchlist</span>
+       </button>
+      </div>
+      <div class="col-span-2">
+       <h2 class="text-3xl font-bold text-accent-1 uppercase">Gang of Lagos</h2>
+       <div class="border-y-2 border-accent-3/30 p-4  my-4 flex gap-7 text-txtpri/70 text-sm">
+         <div class="text-yellow-500">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+        </div>
+         <span class="upper">PG-16</span>
+         <span class="uppercase ">action | Thriller</span>
+         <span class="">2023</span>
+         <img src="/movie poster/Logos/AMAA.png" alt="Africa movie academy awards" class="h-6">
+       </div>
+       <div class="flex  justify-between">
+         <div class="text-txtpri flex flex-col gap-6">
+           <p class="1"><span class="font-bold mr-2">Director:</span> Jadesola Osiberu</p>
+           <p class="1"><span class="font-bold mr-2">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
+           <p class="1"><span class="font-bold mr-2">Genre:</span> Action Thriller</p>
+           <p class="1"><span class="font-bold mr-2">Country:</span> Nigeria</p>
+           <p class="1"><span class="font-bold mr-2">Language:</span> English | Yoruba</p>
+           <p class="1"><span class="font-bold mr-2">Duration:</span>2h 4m</p>
+
+           <div class="text-sec-2 mt-12">
+            <h3 class="text-[#f3f3f3] text-base font-bold my-3">Where to watch:</h3>
+            <div class="flex" >
+              <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root"><img src="/movie poster/Logos/Prime video.png" alt="Prime Video logo" width="150px"></a>
+              <a href="https://www.showmax.com"><img src="/movie poster/Logos/showmax.png" alt="Prime Video logo" width="150px"></a>
+            </div>
+          </div>
+         </div>
+         <div class="flex flex-col gap-4">
+           <h4 class="text-txtpri font-bold text-xl capitalize ">cast</h4>
+           <div class="flex gap-3">
+             <img src="/movie poster/GOL/tobi_bakre.png" alt="Tobi Bakare" class="h-16 w-16 rounded-full border-2 border-accent-1">
+             <div class="flex flex-col gap-1">
+              <h5 class="text-txtpri"> Tobi Bakare</h5>
+              <span class="text-accent-2 uppercase text-sm font-semibold">Obalola</span>
+             </div>
+           </div>
+           <div class="flex gap-3">
+             <img src="/movie poster/GOL/Adesuwa_etomi.png" alt="Adesuwa Etomi" class="h-16 w-1n rounded-full border-2 border-accent-1">
+             <div class="flex flex-col gap-1">
+               <h5 class="text-txtpri"> Adesuwa Etomi</h5>
+                <span class="text-accent-2 uppercase text-sm font-semibold">Gift</span>
+             </div>
+           </div>
+           <div class="flex gap-3">
+             <img src="/movie poster/GOL/chike.png" alt="Chike Osebuka" class="h-16 w-16 rounded-full border-2 border-accent-1">
+             <div class="flex flex-col gap-1">
+              <h5 class="text-txtpri"> Chike Osebuka</h5>
+                <span class="text-accent-2 uppercase text-sm font-semibold">Ify</span>
+             </div>
+           </div>
+           <div class="flex gap-3">
+             <img src="/movie poster/GOL/chioma.png" alt="Chioma Akpotha" class="h-16 w-16 rounded-full border-2 border-accent-1">
+             <div class="flex flex-col gap-1">
+              <h5 class="text-txtpri"> Chioma Akpotha</h5>
+                <span class="text-accent-2 uppercase text-sm font-semibold">Mama Ify</span>
+             </div>
+           </div>
+           <div class="flex gap-3">
+             <img src="/movie poster/GOL/Tayo.png" alt="Tayo Faniran" class="h-16 w-16 rounded-full border-2 border-accent-1">
+             <div class="flex flex-col gap-1">
+              <h5 class="text-txtpri"> Tayo Faniran</h5>
+                <span class="text-accent-2 uppercase text-sm font-semibold">Nino</span>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="col-span-1">
+       <h4 class="2">Gallery</h4>
+       <div class="1">
+         <img src="" alt="Gallery Image">
+         <div class="3"><button>Indicators or tabs</button>
+           <button>Indicators or tabs</button>
+           <button>Indicators or tabs</button>
+           <button>Indicators or tabs</button>
+           <button>Indicators or tabs</button>
+         </div>
+       </div>
+      </div>
+     </div>
+ 
+     <!-- Plot, Revies and Advert or news -->
+      <div class="1">
+       <div class="2">
+         <div class="3">
+           <h3 class="w">Plot</h3>
+           <p class="">
+             Gangs of Lagos is about a group of friends whose lives have revolved around crime and violence since their childhood in the Isale Eko area of Lagos, Nigeria. A young boy, Obalola, robs a bag from a woman in traffic with his friend, an act which results in a summons from the king of the streets, known as "Eleniyan" or "Owner of Men", who lauds his confidence and ability. Amazed by his intellect and courage, a gang leader named 'Nino' (played by Tayo Faniran) shows interest and immediately becomes a father figure to him. Nino, though, wants him to go to school and become something great in life.<br>
+ 
+             Unfortunately, Nino is later found dead, and the dreams he had for Obalola (Tobi Bakre) and his friends Ify (Chike) and Gift (Adesua Etomi) have died with him, as the trio begin to work for his partner Kazeem (Olarotimi Fakunle), a greedy and ruthless leader.<br>
+ 
+             As adults, they continue to play different roles in the gang, until things go sideways when Kazeem murders a rival gang member and pins it on Ify, which results in his gruesome murder. With Ify's surviving friends hellbent on revenge, Obalola discovers several skeletons in Kazeem's closet. Determined to avenge all the loved ones whom Kazeem's greed has taken from him, Oba leads a bloody gang war to seek revenge on Kazeem.
+           </p>
+         </div>
+         <div class="3">Reviews
+ 
+         </div>
+       </div>
+       <div class="2">Advert section or news</div>
+      </div>
+ 
+      <!-- Recommended movies -->
+       <div class="1">
+         Movie line ups in flex manner
+       </div>
+    </main>
+   
+  </div>
+  <footer></footer>
+  </body>
+</html>

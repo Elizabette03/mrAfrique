@@ -26,15 +26,16 @@
   <section class="w-full">
     <div class="w-4/5 flex mx-auto mt-11 px-10 py-10 bg-gray-400 relative">
       <div class="w-2/12 flex justify-center items-center">
-        <button class="py-4 bg-gray-100/10 shadow-md shadow-black/15 rounded">
+        <button onclick="prev()" class="py-4 bg-gray-100/10 shadow-md shadow-black/15 rounded z-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-left " viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
           </svg>
         </button>
       </div>
+
       <div id="carousel" class="w-10/12 h-[550px] py-3 border-4  ">
-        <div id="slider" class="w-full h-full" >
-          <div class="w-[500%] flex translate-x-[20%]">
+        <div class="w-full h-full" >
+          <div id="slider" class="w-[500%] flex translate-x-[0%]">
             <div id="" class="slide mx-auto flex flex-col basis-full justify-center items-center gap-5">
               <img src="/movie poster/download (1).jpeg" alt="" class="w-4/5 rounded-md">
               <h4 class="text-xl font-bold text-center">Chivido: Lagos state shutsdown as Davido finally gives Chioma the greatest assurance</h4>
@@ -66,12 +67,11 @@
               <button class="px-2 text-white hover:text-green-600">Read More</button>
             </div>
           </div>
- 
         </div>
       </div>
       
       <div class="w-2/12 flex justify-center items-center">
-        <button onclick="next()" class="py-4 bg-gray-100/10 shadow-md shadow-black/15 rounded">
+        <button onclick="next()" class="py-4 bg-gray-100/10 shadow-md shadow-black/15 rounded z-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
           </svg>
@@ -354,34 +354,50 @@
 
     let slideIndex = 0
 
-    console.log(slide.length)
+    const prev = () => {
+      // slider.classList.remove("translate-x-[(' + (slideIndex) * -25 + '%)]");
+        
+        slideIndex = (slideIndex > 0) ? slideIndex - 1 : 0;
+        let transformX = (slideIndex * -20)+'%'
+        let transformNext = ((slideIndex+1) * -20)+'%'
+
+        slider.classList.remove("translate-x-["+transformNext+"]");
+        slider.classList.add("translate-x-["+transformX+"]");
+    }
+
     const next = () => {
       // slider.classList.remove("translate-x-[(' + (slideIndex) * -25 + '%)]");
         
         slideIndex = (slideIndex < slide.length-1) ? slideIndex + 1 : slide.length - 1;
         let transformX = (slideIndex * -20)+'%'
         let transformPrev = ((slideIndex-1) * -20)+'%'
-        console.log(slideIndex);
-        console.log(transformX);
-        console.log(transformPrev);
 
         slider.classList.remove("translate-x-["+transformPrev+"]");
         slider.classList.add("translate-x-["+transformX+"]");
-
-        // if(slideIndex < slide.length-1) {
-        // slideIndex=+1
-        // let transformX = (slideIndex * -20)+'%'
-        // console.log(slideIndex);
-        // console.log(transformX);
-
-        // slider.classList.remove("translate-x-["+transformX+"]");
-        // slider.classList.add("translate-x-["+transformX+"]");
-        // }
-
-        // else {
-        //   slideIndex = slide.length-1
-        // }
     }
+
+
+
+    // Product slider
+
+  // const slideContainer = document.querySelectorAll(".slider");
+  // const nxtBtn = document.querySelectorAll(".next-btn");
+  // const prvBtn = document.querySelectorAll(".prev-btn");
+
+  // slideContainer.forEach((movie, i) => {
+  // let dimension = movie.getBoundingClientRect();
+  // let dimension = movie.clientWidth;
+  // let containerWidth = dimension.width;
+
+  // nxtBtn[i].addEventListener('click', () => {
+  //   movie.scrollLeft += dimension;
+  // })
+
+  // prvBtn[i].addEventListener('click', () => {
+  //   movie.scrollLeft -= containerWidth
+  // })
+
+// })
 
   </script>
 </body>

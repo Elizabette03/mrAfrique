@@ -8,13 +8,16 @@ module.exports = {
         txtpri: 'rgb(var(--color-txtpri) / <alpha-value>)',
         sec: {
           1: 'rgb(var(--color-sec1) / <alpha-value>)',
-          2: 'rgb(var(--color-sec2) / <alpha-value>)'
+          2: 'rgb(var(--color-sec2) / <alpha-value>)',
         },
         accent: {
           1: 'rgb(var(--color-accent1) / <alpha-value>)',
           2: 'rgb(var(--color-accent2) / <alpha-value>)',
-          3: 'rgb(var(--color-accent3) / <alpha-value>)'
+          3: 'rgb(var(--color-accent3) / <alpha-value>)',
         },
+      },
+      shadow: {
+        fine: '2px 4px 10px',
       },
       keyframes: {
         bganimate: {
@@ -30,6 +33,8 @@ module.exports = {
 
         bganimate: 'bganimate 10s ease infinite'
       },
+
+
     },
   },
   plugins: [],

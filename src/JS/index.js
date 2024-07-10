@@ -25,3 +25,15 @@ sidebar.addEventListener("mouseleave", () => {
   navItems.classList.remove("text-accent-2")
   navItems.classList.add("text-accent-2/30")
 })
+
+
+// Swiper Initialization code
+// const swiper = new Swiper('.slider-wrapper', {
+//   loop: true,
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
