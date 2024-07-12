@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon_io/favicon.ico">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+
+    <!-- Bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- tailwind stylesheet -->
+    <link rel="stylesheet" href="/src/css/tailwind.css">
+
+    <title>mrAfrique - browse Movies</title>
+  </head>
+  <body class="bg-bgpri">
+     <!-- fixed gradient background -->
+  <div class="fixed top-0 -z-50 h-screen w-screen bg-bgpri dark:bg-[radial-gradient(ellipse_40%_40%_at_50%_50%,rgba(31,38,5,1),rgba(255,255,255,0))]"></div>
+
+  <!-- Fixed sidebar -->
+  <nav id="sidebar" class="h-[100vh] w-[4rem] flex items-center fixed top-0 left-0 my-auto z-50 pl-2 transition-all duration-300 ease-in ">
+    <div id="nav-items" class="flex flex-col text-accent-2/30 transition-all duration-300 ease-in">
+      <div class="w-[3rem]  h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-house-door-fill text-3xl  px-2"></i>
+        <h4 class=" opacity-0 translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Home</h4>
+      </div>
+      <div class="w-[3rem] h-24  py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-film text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 text-nowrap py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Browse Movies</h4>
+      </div>
+      <div class="w-[3rem] h-24  py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-list-stars text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Watchlist</h4>
+      </div>
+      <div class="w-[3rem] h-24  py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-clock-history text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">History</h4>
+      </div>
+      <div class="w-[3rem] h-24  py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-heart-fill text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Liked</h4>
+      </div>
+    </div>
+  </nav>
+
+  <div id="to-blur" class="">
+    <main class="grid grid-cols-5">
+      <div class="col-span-1"></div>
+      <div class="col-span-4">
+        <div class="1"></div>
+        <div class="">
+
+          <!-- card -->
+          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/4th republic.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">4th republic</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama truStr hisFic w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/76.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">76</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama  truStr w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/93 days.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">93 days</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ke Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/A better life.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">A better life</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Gh Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Adams apple-gh.jpeg" alt="Adams apple" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Adams apple</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Afamefuna.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Afamefuna</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Comedy w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Aki and Paw paw.jpeg" alt="Aki and Paw paw" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Aki and Paw paw</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Action Biography w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Amina.jpeg" alt="Amina" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Amina</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama Fantasy w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Anikulapo.jpeg" alt="Anikulapo" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Anikulapo</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Gh Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Azali-gh.jpeg" alt="Azali" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Azali</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ke Comedy w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Big girl small world.jpeg" alt="Big girl small world" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Big girl small world</h2>
+                <h3 class="text-base font-bold text-accent-2 whitespace-nowrap">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Romance Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/big love.jpeg" alt="big love" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">big love</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama Crime Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/blood sisters.jpeg" alt="blood sisters" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">blood sisters</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Adventure Drama Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/blood vessel.jpeg" alt="blood vessel" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">blood vessel</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Comedy Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/breaded life.jpeg" alt="breaded life" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">breaded life</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/breathe of life.jpeg" alt="breathe of life" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">breathe of life</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Action Crime Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/brotherhood.jpeg" alt="brotherhood" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">brotherhood</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Zb Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Can you see us.jpeg" alt="Can you see us" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Can you see us</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Gh Action Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/freetown-gh.jpeg" alt="freetown" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">freetown</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Funmilayo.jpeg" alt="Funmilayo" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Funmilayo</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Ng Action Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Gangs of lagos.jpeg" alt="Gangs of lagos" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">Gangs of lagos</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Gh Adventure w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/gen of Ashanti-gh.jpeg" alt="genesis of Ashanti" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">genesis of Ashanti</h2>
+                <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Gh Comedy History w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/Ghana.jpeg" alt="A country called Ghana" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">A country called Ghana</h2>
+                <h3 class="text-base font-bold text-accent-2 whitespace-nowrap">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- card -->
+          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/ghanian wedding.jpeg" alt="A country called Ghana" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">My Very Ghanian Wedding</h2>
+                <h3 class="text-base font-bold text-accent-2 whitespace-nowrap">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>
+
+          <img src="" alt="" class="">
+          <img src="/movie poster/Glamour girls.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/God calling.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/God sleeps in rwanda.jpeg" alt="" class="Rw Documentary">
+          <img src="/movie poster/Gods must be crazy.jpeg" alt="" class="Bt Adventure Comedy">
+          <img src="/movie poster/gold coast lounge.jpeg" alt="" class="Gh Drama History Romance">
+          <img src="/movie poster/Half of a yellow sun.jpeg" alt="" class="Ng Drama Romance hisFic">
+          <img src="/movie poster/Happiness.jpeg" alt="" class="Sa Drama Romance">
+          <img src="/movie poster/Hotel rwanda.jpeg" alt="" class="Rw Biography History Drama">
+          <img src="/movie poster/house of secrets.jpeg" alt="" class="Ng Mystery Thriller">
+          <img src="/movie poster/ijogbon.jpeg" alt="" class="Ng Drama Thriller">
+          <img src="/movie poster/Instant dad.jpeg" alt="" class="Ke Comedy">
+          <img src="/movie poster/inumber number.jpeg" alt="" class="Sa Action Drama">
+          <img src="/movie poster/ivory.png" alt="" class="Gh Crime">
+          <img src="/movie poster/Jagun Jagun.jpeg" alt="" class="Ng Drama History">
+          <img src="/movie poster/Just in time-kenya.jpeg" alt="" class="Ke Comedy Drama">
+          <img src="/movie poster/kalahari-bot.jpeg" alt="" class="Bt Documentary">
+          <img src="/movie poster/Kandasamy.jpeg" alt="" class="Sa Comedy">
+          <img src="/movie poster/King of boys.jpeg" alt="" class="Ng Action Crime Drama">
+          <img src="/movie poster/last lions-bots.jpeg" alt="" class="Bt Documentary">
+          <img src="/movie poster/light in the dark.jpeg" alt="" class="Ng Thriller">
+          <img src="/movie poster/lionheart.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/living in bondage.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Man of God.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Mandela.jpeg" alt="" class="Sa Drama">
+
+          <!-- card -->
+          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+            <a href="" class="">
+              <div class="h-[300px] w-[250px] overflow-hidden ">
+                <img src="/movie poster/mandela-lwtf.jpeg" alt="mandela - long walk to freedom" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
+              </div>
+              <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
+                <h2 class="text-base font-bold text-txtpri capitalize">mandela - long walk to freedom</h2>
+                <h3 class="text-base font-bold text-accent-2 whitespace-nowrap ">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+              </div>
+            </a>
+          </div>     
+
+          <img src="/movie poster/Married to work.jpeg" alt="" class="Ke Romance Comedy">
+          <img src="/movie poster/merry men.jpeg" alt="" class="Ng Action Comedy">
+          <img src="/movie poster/Mr and Mrs.jpeg" alt="" class="Ng Drama Romance">
+          <img src="/movie poster/my village people.jpeg" alt="" class="Ng Horror">
+          <img src="/movie poster/Nafsi.jpeg" alt="" class="Ke Drama">
+          <img src="/movie poster/Nairobi half life.jpeg" alt="" class="Ke Drama">
+          <img src="/movie poster/Nigerian prince.jpeg" alt="" class="Ng Drama Thriller Crime">
+          <img src="/movie poster/Nneka.jpeg" alt="" class="Ng Horror Mystery">
+          <img src="/movie poster/October 1.jpeg" alt="" class="Ng Thriller Mystery">
+          <img src="/movie poster/okavango-bot.jpeg" alt="" class="Bt Documentary">
+          <img src="/movie poster/ololade.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Oloture.jpeg" alt="" class="Ng Drama Crime">
+          <img src="/movie poster/Omugwo.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Orisa.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/rafiki.jpeg" alt="" class="Ke Romance Drama">
+          <img src="/movie poster/Rattle snake.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/return of bey-gh.jpeg" alt="" class="Gh Romance Drama">
+          <img src="/movie poster/RHW of Nairobi.jpeg" alt="" class="Ke Drama">
+          <img src="/movie poster/Sarafina.jpeg" alt="" class="Sa Drama hisFic">
+          <img src="/movie poster/Shining star.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Sometimes in April.jpeg" alt="" class="Rw History Drama">
+          <img src="/movie poster/soweto love story.jpeg" alt="" class="Sa Romance Comedy">
+          <img src="/movie poster/taste of sin-ghana.jpeg" alt="" class="Gh Drama">
+          <img src="/movie poster/the curfew-gh.jpeg" alt="" class="Gh Drama Thriller">
+          <img src="/movie poster/The origin.jpeg" alt="" class="Ng Horror Thriller">
+          <img src="/movie poster/tribe Called Judah.jpeg" alt="" class="Ng Drama Comedy">
+          <img src="/movie poster/Tsotsi.jpeg" alt="" class="Sa Drama Crime">
+          <img src="/movie poster/Unexpected places.jpeg" alt="" class="Ng Drama Romance">
+          <img src="/movie poster/Unmarried.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Vanity.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/wedding party.jpeg" alt="" class="Ng Romance Comedy">
+          <img src="/movie poster/Wildflower.jpeg" alt="" class="Ng Drama">
+          <img src="/movie poster/Yesterday.jpeg" alt="" class="Sa Drama">
+        </div>
+      </div>
+    </main>
+  </div>
+
+</head>
+<body>
+  
+</body>
+</html>

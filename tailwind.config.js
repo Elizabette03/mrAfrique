@@ -16,9 +16,15 @@ module.exports = {
           3: 'rgb(var(--color-accent3) / <alpha-value>)',
         },
       },
-      shadow: {
-        fine: '2px 4px 10px',
+
+      fontFamily: {
+        poppin: ['Poppins'],
       },
+
+      shadow: {
+        'fine': '2px 4px 10px 0',
+      },
+
       keyframes: {
         slider: {
           'from':{transform: "translateX(0)"},
