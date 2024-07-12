@@ -57,5 +57,9 @@
   .hero-btn {
     @apply px-6 py-3 text-xl uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-300 w-fit;
   }
+
+  .movies {
+    @apply border-4 border-sec-2
+  }
  
 }

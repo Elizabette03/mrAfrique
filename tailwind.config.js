@@ -29,12 +29,17 @@ module.exports = {
         slider: {
           'from':{transform: "translateX(0)"},
           'to':{transform: "translateX(calc(-50% - 1rem))"},
+        },
 
+        appear: {
+          '0':{opacity: "0", transform: "translateY(20%)"},
+          '100%':{opacity: "1", transform: "translateY(0)"}
         }
       },
 
       animation: {
         slider: 'slider 100s infinite linear',
+        appear: 'appear 2s ease'
 
       },
 
