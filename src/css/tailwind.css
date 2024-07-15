@@ -833,6 +833,14 @@ video {
   grid-column: span 8 / span 8;
 }
 
+.-m-24{
+  margin: -6rem;
+}
+
+.-m-20{
+  margin: -5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1083,6 +1091,26 @@ video {
   height: 100vh;
 }
 
+.h-\[70vh\]{
+  height: 70vh;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[70\]{
+  height: 70;
+}
+
+.h-\[50vh\]{
+  height: 50vh;
+}
+
+.h-\[30vh\]{
+  height: 30vh;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1286,6 +1314,22 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes appear{
+  from{
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-appear{
+  animation: appear 600ms ease;
+}
+
 @keyframes slider{
   from{
     transform: translateX(0);
@@ -1298,22 +1342,6 @@ video {
 
 .animate-slider{
   animation: slider 100s infinite linear;
-}
-
-@keyframes appear{
-  0{
-    opacity: 0;
-    transform: translateY(20%);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-appear{
-  animation: appear 2s ease;
 }
 
 .cursor-default{
@@ -1592,6 +1620,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-bgpri\/50{
+  background-color: rgb(var(--color-bgpri) / 0.5);
+}
+
 .bg-\[radial-gradient\(ellipse_60\%_60\%_at_50\%_-10\%\2c rgba\(164\2c 167\2c 30\2c 0\.5\)\2c rgba\(255\2c 255\2c 255\2c 0\)\)\]{
   background-image: radial-gradient(ellipse 60% 60% at 50% -10%,rgba(164,167,30,0.5),rgba(255,255,255,0));
 }
@@ -1637,6 +1669,18 @@ video {
 .from-white{
   --tw-gradient-from: #fff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-black{
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-bgpri\/30{
+  --tw-gradient-from: rgb(var(--color-bgpri) / 0.3) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(var(--color-bgpri) / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
