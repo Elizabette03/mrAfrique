@@ -51,14 +51,12 @@
 
     <!-- Trailer container -->
 
-    <div class="h-[80vh] overflow-hidden relative bg-gradient-to-b from-white to-transparent" style="-webkit-mask-image: linear-gradient(black, transparent);
+    <div class="h-[60vh] overflow-hidden relative bg-gradient-to-b from-white to-transparent" style="-webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient(black, transparent);">
-      <video controls class="w-full">
-        <source src="/movie poster/GOL/Gangs Of Lagos - Full Trailer.mp4"  type="video/mp4">
-      </video>
+      <img src="/movie poster/GOL/bkgrd.jpeg" alt="" class="w-full">
     </div>
 
-    <main class="relative top-[-100px] w-[85%] mx-auto">
+    <main class="relative top-[-200px] w-[85%] mx-auto">
        <!-- Movie page hero section -->
     <div class="grid grid-cols-4 grid-rows-1 gap-8">
 
@@ -72,15 +70,15 @@
        </button>
       </div>
       <div class="col-span-2">
-       <h2 class="text-3xl font-bold text-accent-1 uppercase">Gang of Lagos</h2>
-       <div class="border-y-2 border-accent-3/30 p-4  my-4 flex gap-7 text-txtpri/50 text-sm ">
+       <h2 class="text-5xl font-bold text-white uppercase">Gang of Lagos</h2>
+       <div class="border-y-2 border-accent-3/50 p-4  my-4 flex gap-7 text-white/70 text-sm ">
          <div class="text-accent-2">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star"></i>
-        </div>
+          </div>
          <span class="font-semibold hover:text-accent-2 hover:scale-105 transition-all duration-300 cursor-default">PG-16</span>
          <span class="uppercase font-semibold hover:text-accent-2 hover:scale-105 transition-all duration-300 cursor-default">action | Thriller</span>
          <span class="font-semibold hover:text-accent-2 hover:scale-105 transition-all duration-300 cursor-default">2023</span>
@@ -109,7 +107,7 @@
        </div>
       </div>
       <div class="col-span-1 ">
-       <h4 class="text-2xl text-accent-2 font-bold mb-5 text-right">Gallery</h4>
+       <h4 class="text-2xl text-white font-bold mb-5 text-right">Gallery</h4>
        <div class="img-container flex flex-col gap-4 h-[60vh] overflow-y-scroll [scrollbar-color:#1f2605]" style="scrollbar-width: thin; scrollbar-color: #1f2605 #060c03;" >
          <img src="/movie poster/GOL/Img1.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
          <img src="/movie poster/GOL/img2.jpeg" alt="Gallery Image" class="w-full object-cover object-center cursor-pointer">
@@ -238,8 +236,17 @@
      <!-- Plot, Reviews and Advert or news -->
       <div class="grid grid-cols-4 mt-24 gap-8">
 
-        <!-- Plot and reviews container -->
+
+
+        <!-- Trailer Plot and reviews container -->
        <div class="col-span-3">
+        <div class="">
+          <h2 class="w-3/5 text-txtpri text-2xl uppercase py-5 font-bold border-b-4 border-accent-1">Watch Trailer</h2>
+          <video controls class="w-full mt-10">
+            <source src="/movie poster/GOL/Gangs Of Lagos - Full Trailer.mp4"  type="video/mp4" controls>
+          </video>
+        </div>
+
          <div class="">
           <h2 class="w-3/5 text-txtpri text-2xl uppercase py-5 font-bold border-b-4 border-accent-1">plot</h2>
            <p class="text-txtpri/70 text-justify mt-5 ">
@@ -513,7 +520,84 @@
     </main>
    
   </div>
-  <footer></footer>
+  <footer class="text-white m-4">
+    <div class="bg-sec-1">
+      <div class="flex justify-between w-[85%] mx-auto py-8"> <!--mx-auto centers the element horizontally-->
+        <div class="w-1/4">
+          <img src="/mrAfri.png" alt="Company Logo" width="200px">
+          <p class="pt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita libero, provident a voluptas laboriosam modi aliquam quam laudantium ipsa eos pariatur.
+          </p>
+        </div>
+  
+        <div class="flex">
+          <ul class="flex flex-col justify-between">
+            <li>
+              <a href="explore" class="font-bold ">Explore</a>
+            </li>
+  
+            <li>
+              <a href="home">Home</a>
+            </li>
+  
+            <li>
+              <a href="browse movies">Browse Movies</a>
+            </li>
+  
+            <li>
+              <a href="history">History</a>
+            </li>
+  
+            <li>
+              <a href="watchlist">Watchlist</a>
+            </li>
+  
+          </ul>
+        </div>
+  
+        <div class="flex">
+          <ul class="flex flex-col justify-between">
+            <li>
+              <a href="company" class="font-bold">Company</a>
+            </li>
+  
+            <li>
+              <a href="About Us">About Us</a>
+            </li>
+  
+            <li>
+              <a href="faq">FAQ</a>
+            </li>
+  
+            <li>
+              <a href="contact us">Contact Us</a>
+            </li>
+  
+            <li>
+              <a href="terms of use">Terms of Use</a>
+            </li>        
+          </ul>     
+        </div>
+  
+        <div class="click my-auto"> <!--my-auto to create space between the top and bottom of the element-->
+          <div class="flex"> <!--the flex property is applied to remove the spaces btw the Search field and button--->
+            <input type="search" id="text" class="py-3 px-2 placeholder:text-accent-1 rounded-l-md" placeholder="email">       
+            <button class="btn rounded-tl-none rounded-bl-none">Subscribe</button>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  
+       
+      <div class="bg-accent-1 flex justify-center py-6  ">  
+          <span class="text-sm">
+            © 2024 mrAfrique™. All rights reserved
+          </span>
+      </div>
+      
+  </footer>
+  
 
   <script src="/src/JS/index.js"></script>
   </body>
