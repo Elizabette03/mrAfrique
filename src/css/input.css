@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,7 @@
 
 @layer base {
   :root {
-    --color-bgpri: 243 243 234;
+    --color-bgpri: 243 243 243;
     --color-txtpri: 6 12 3;
     --color-sec1: 31 38 5;
     --color-sec2: 31 101 33;
@@ -19,18 +21,28 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --color-bgpri: 6 12 3;
-      --color-txtpri: 243 243 234;
+      --color-txtpri: 154 160 166;
       --color-sec1: 31 38 5;
       --color-sec2: 31 101 33;
       --color-accent1: 83 144 15;
       --color-accent2: 164 167 30;
       --color-accent3: 214 206 21;
     }
-  }
+  } 
 
-  :root[data-theme="dark"] {
+  /* :root[data-theme="dark"] {
     --color-bgpri: 6 12 3;
     --color-txtpri: 243 243 234;
+    --color-sec1: 31 38 5;
+    --color-sec2: 31 101 33;
+    --color-accent1: 83 144 15;
+    --color-accent2: 164 167 30;
+    --color-accent3: 214 206 21;
+  } */
+
+  .dark{
+    --color-bgpri: 6 12 3;
+    --color-txtpri: 154 160 166;
     --color-sec1: 31 38 5;
     --color-sec2: 31 101 33;
     --color-accent1: 83 144 15;
@@ -39,7 +51,15 @@
   }
 
   .btn {
-    @apply px-6 py-3 text-xl uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-300;
+    @apply px-5 py-2 text-base uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-500 w-fit;
+  }
+
+  .hero-btn {
+    @apply px-6 py-3 text-xl uppercase rounded-md font-bold text-white bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 hover:shadow-lg hover:from-accent-1 hover:via-accent-1 hover:to-accent-2 transition-all duration-300 w-fit;
+  }
+
+  .movies {
+    @apply border-4 border-sec-2
   }
  
 }
