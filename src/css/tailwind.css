@@ -1286,20 +1286,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes slider{
-  from{
-    transform: translateX(0);
-  }
-
-  to{
-    transform: translateX(calc(-50% - 1rem));
-  }
-}
-
-.animate-slider{
-  animation: slider 100s infinite linear;
-}
-
 @keyframes appear{
   0{
     opacity: 0;
@@ -1314,6 +1300,20 @@ video {
 
 .animate-appear{
   animation: appear 2s ease;
+}
+
+@keyframes slider{
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+.animate-slider{
+  animation: slider 100s infinite linear;
 }
 
 .cursor-default{
