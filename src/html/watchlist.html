@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon_io/favicon.ico">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+
+    <!-- Bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- tailwind stylesheet -->
+    <link rel="stylesheet" href="/src/css/tailwind.css">
+    <title>mrAfrique - Gang of Lagos  movie review</title>
+  </head>
+  <body class="bg-bgpri font-poppin">
+     <!-- fixed gradient background -->
+  <div class="fixed top-0 -z-50 h-screen w-screen bg-bgpri dark:bg-[radial-gradient(ellipse_40%_40%_at_50%_50%,rgba(31,38,5,1),rgba(255,255,255,0))]"></div>
+
+  <!-- Fixed sidebar -->
+  <nav id="sidebar" class="h-[100vh] w-[4rem] flex items-center fixed top-0 left-0 my-auto z-50 pl-2 transition-all duration-300 ease-in ">
+    <div id="nav-items" class="flex flex-col text-accent-2/30 transition-all duration-300 ease-in">
+      <div class="w-[3rem]  h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-house-door-fill text-3xl  px-2"></i>
+        <h4 class=" opacity-0 translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Home</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-film text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 text-nowrap py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Browse Movies</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-list-stars text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Watchlist</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-clock-history text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">History</h4>
+      </div>
+      <div class="w-[3rem] h-24 py-3 flex items-center gap-2 group cursor-pointer overflow-hidden hover:overflow-visible">
+        <i class="bi bi-heart-fill text-3xl  px-2"></i>
+        <h4 class="opacity-0  translate-x-[-50%] group-hover:translate-x-0 group-hover:opacity-100 transition-all ease duration-500 px-10 py-2 uppercase font-bold text-white rounded-tr-full rounded-br-full bg-gradient-to-r from-transparent via-accent-3 to-accent-1">Liked</h4>
+      </div>
+    </div>
+  </nav>
+
+  <div id="to-blur" class="">
+
+    <!-- Hero section container -->
+
+    <div class="">
+      <div class="h-[50vh] overflow-hidden relative" style="-webkit-mask-image: linear-gradient(black, transparent);
+     mask-image: linear-gradient(black, transparent);">
+    <!-- <div class="bg-gradient-to-b from-bgpri/30 to-transparent w-full absolute h-[30vh]"></div> -->
+     <img src="/movie poster/background.png" alt="movie background" class="w-full">
+    </div>
+      <h1 class="w-[85%] mx-auto -my-20 text-txtpri text-5xl font-extrabold ">Your Watchlist</h1>
+    </div>
+    
+
+    <section class="w-[85%] my-48 mx-auto relative">
+      <div class="grid grid-cols-7 gap-28">
+
+        <div class="col-span-5 flex flex-col gap-28 ">
+           
+        <!-- Watchlist -->
+        <div class="grid grid-cols-4 gap-10 ">
+          <div class="col-span-1 overflow-hidden rounded-md shadow-md shadow-accent-3/40">
+            <img src="/movie poster/Can you see us.jpeg" alt="Movie poster" class="w-full hover:scale-125 transition-all duration-500">
+          </div>
+          
+          <div class="col-span-3 flex flex-col justify-between">
+            <div class="flex  items-center gap-32">
+              <h2 class="text-xl font-bold text-accent-1 capitalize">Can you see us</h2>
+              <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+            </div>
+            <div>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Director:</span> Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Genre:</span> Action Thriller</p>
+              <p class="text-txtpri text-justify mt-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti praesentium aspernatur distinctio ullam velit libero. Accusamus laboriosam natus impedit aperiam, hic corrupti molestias! Eum architecto modi quaerat reprehenderit voluptatum?...
+              </p>
+            </div>
+           
+            <div class="text-txtpri uppercase font-bold text-lg flex items-center gap-10"><p>Watch now:</p> <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class=""><img src="/movie poster/Logos/Netflix logo.png" alt="Prime Video logo" width="120px" class="w-20 hover:scale-110 transition-all duration-300"></a> </div>
+
+            <button class="text-txtpri w-fit hover:text-accent-2">Remove from watchlist</button>
+            
+          </div>
+        </div>
+        
+        <!-- Watchlist -->
+        <div class="grid grid-cols-4 gap-10 relative">
+          <div class="col-span-1 overflow-hidden rounded-md shadow-md shadow-accent-3/40">
+            <img src="/movie poster/Amina.jpeg" alt="Movie poster" class="w-full hover:scale-125 transition-all duration-500">
+          </div>
+          
+          <div class="col-span-3 flex flex-col justify-between">
+            <div class="flex  items-center gap-32">
+              <h2 class="text-xl font-bold text-accent-1 capitalize">amina</h2>
+              <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+            </div>
+            <div>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Director:</span> Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Genre:</span> Action Thriller</p>
+              <p class="text-txtpri text-justify mt-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti praesentium aspernatur distinctio ullam velit libero. Accusamus laboriosam natus impedit aperiam, hic corrupti molestias! Eum architecto modi quaerat reprehenderit voluptatum?...
+              </p>
+            </div>
+           
+            <div class="text-txtpri uppercase font-bold text-lg flex items-center gap-10"><p>Watch now:</p> <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class=""><img src="/movie poster/Logos/Netflix logo.png" alt="Prime Video logo" width="120px" class="w-20 hover:scale-110 transition-all duration-300"></a> </div>
+
+            <button class="text-txtpri w-fit hover:text-accent-2">Remove from watchlist</button>
+            
+          </div>
+        </div>
+        
+        <!-- Watchlist -->
+        <div class="grid grid-cols-4 gap-10 relative">
+          <div class="col-span-1 overflow-hidden rounded-md shadow-md shadow-accent-3/40">
+            <img src="/movie poster/breathe of life.jpeg" alt="Movie poster" class="w-full hover:scale-125 transition-all duration-500">
+          </div>
+          
+          <div class="col-span-3 flex flex-col justify-between">
+            <div class="flex  items-center gap-32">
+              <h2 class="text-xl font-bold text-accent-1 capitalize">Breathe of Life</h2>
+              <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+            </div>
+            <div>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Director:</span> Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Genre:</span> Action Thriller</p>
+              <p class="text-txtpri text-justify mt-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti praesentium aspernatur distinctio ullam velit libero. Accusamus laboriosam natus impedit aperiam, hic corrupti molestias! Eum architecto modi quaerat reprehenderit voluptatum?...
+              </p>
+            </div>
+           
+            <div class="text-txtpri uppercase font-bold text-lg flex items-center gap-10"><p>Watch now:</p> <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class=""><img src="/movie poster/Logos/Prime video.png" alt="Prime Video logo" width="120px" class="hover:scale-110 transition-all duration-300"></a> </div>
+
+            <button class="text-txtpri w-fit hover:text-accent-2">Remove from watchlist</button>
+            
+          </div>
+        </div>
+        
+        <!-- Watchlist -->
+        <div class="grid grid-cols-4 gap-10 relative">
+          <div class="col-span-1 overflow-hidden rounded-md shadow-md shadow-accent-3/40">
+            <img src="/movie poster/Gods must be crazy.jpeg" alt="Movie poster" class="w-full hover:scale-125 transition-all duration-500">
+          </div>
+          
+          <div class="col-span-3 flex flex-col justify-between">
+            <div class="flex  items-center gap-32">
+              <h2 class="text-xl font-bold text-accent-1 capitalize">The Gods must be crazy</h2>
+              <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+            </div>
+            <div>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Director:</span> Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Genre:</span> Action Thriller</p>
+              <p class="text-txtpri text-justify mt-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti praesentium aspernatur distinctio ullam velit libero. Accusamus laboriosam natus impedit aperiam, hic corrupti molestias! Eum architecto modi quaerat reprehenderit voluptatum?...
+              </p>
+            </div>
+           
+            <div class="text-txtpri uppercase font-bold text-lg flex items-center gap-10"><p>Watch now:</p> <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class=""><img src="/movie poster/Logos/Youtube logo.png" alt="Prime Video logo" width="120px" height="50px" class="w-20 hover:scale-110 transition-all duration-300"></a> </div>
+
+            <button class="text-txtpri w-fit hover:text-accent-2">Remove from watchlist</button>
+            
+          </div>
+        </div>
+        
+        <!-- Watchlist -->
+        <div class="grid grid-cols-4 gap-10 relative">
+          <div class="col-span-1 overflow-hidden rounded-md shadow-md shadow-accent-3/40">
+            <img src="/movie poster/Sarafina.jpeg" alt="Movie poster" class="w-full hover:scale-125 transition-all duration-500">
+          </div>
+          
+          <div class="col-span-3 flex flex-col justify-between">
+            <div class="flex  items-center gap-32">
+              <h2 class="text-xl font-bold text-accent-1 capitalize">Sarafina</h2>
+              <h3 class="text-base font-bold text-accent-2">4/5 <span class=""><i class="bi bi-star-fill"></i></span></h3>
+            </div>
+            <div>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Director:</span> Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Writer:</span> Kay I. Jegede | Jadesola Osiberu</p>
+              <p class="text-txtpri"><span class="font-bold mr-2 ">Genre:</span> Action Thriller</p>
+              <p class="text-txtpri text-justify mt-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti praesentium aspernatur distinctio ullam velit libero. Accusamus laboriosam natus impedit aperiam, hic corrupti molestias! Eum architecto modi quaerat reprehenderit voluptatum?...
+              </p>
+            </div>
+           
+            <div class="text-txtpri uppercase font-bold text-lg flex items-center gap-10"><p>Watch now:</p> <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root" class=""><img src="/movie poster/Logos/showmax.png" alt="Prime Video logo" width="120px" height="50px" class=" hover:scale-110 transition-all duration-300"></a> </div>
+
+            <button class="text-txtpri w-fit hover:text-accent-2">Remove from watchlist</button>
+            
+          </div>
+        </div>
+
+        </div>
+       
+        <div class="col-span-2 ">
+          <div class="sticky top-0 space-y-16 ">
+            <h2 class="text-accent-2 text-4xl font-bold animate-pulse text-center uppercase">coming soon !!!</h2>
+            <img src="/movie poster/Force-Empire.jpg" alt="">
+            <img src="/movie poster/GOL/arbitration.jpeg" alt="" class="w-full">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-white">
+      <div class="bg-sec-1">
+        <div class="flex justify-between w-[85%] mx-auto py-8"> <!--mx-auto centers the element horizontally-->
+          <div class="w-1/4">
+            <img src="/mrAfri.png" alt="Company Logo" width="200px">
+            <p class="pt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita libero, provident a voluptas laboriosam modi aliquam quam laudantium ipsa eos pariatur.
+            </p>
+          </div>
+    
+          <div class="flex">
+            <ul class="flex flex-col justify-between">
+              <li>
+                <a href="explore" class="font-bold ">Explore</a>
+              </li>
+    
+              <li>
+                <a href="home">Home</a>
+              </li>
+    
+              <li>
+                <a href="browse movies">Browse Movies</a>
+              </li>
+    
+              <li>
+                <a href="history">History</a>
+              </li>
+    
+              <li>
+                <a href="watchlist">Watchlist</a>
+              </li>
+    
+            </ul>
+          </div>
+    
+          <div class="flex">
+            <ul class="flex flex-col justify-between">
+              <li>
+                <a href="company" class="font-bold">Company</a>
+              </li>
+    
+              <li>
+                <a href="About Us">About Us</a>
+              </li>
+    
+              <li>
+                <a href="faq">FAQ</a>
+              </li>
+    
+              <li>
+                <a href="contact us">Contact Us</a>
+              </li>
+    
+              <li>
+                <a href="terms of use">Terms of Use</a>
+              </li>        
+            </ul>     
+          </div>
+    
+          <div class="click my-auto"> <!--my-auto to create space between the top and bottom of the element-->
+            <div class="flex"> <!--the flex property is applied to remove the spaces btw the Search field and button--->
+              <input type="search" id="text" class="py-3 px-2 placeholder:text-accent-1 rounded-l-md" placeholder="email">       
+              <button class="btn rounded-tl-none rounded-bl-none">Subscribe</button>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    
+         
+        <div class="bg-accent-1 flex justify-center py-6  ">  
+            <span class="text-sm">
+              © 2024 mrAfrique™. All rights reserved
+            </span>
+        </div>
+        
+    </footer>
+  
+</body>
+</html>
