@@ -59,7 +59,7 @@
   }
 
   .movies {
-    @apply border-4 border-sec-2
+    @apply border-8 border-sec-2
   }
  
 }

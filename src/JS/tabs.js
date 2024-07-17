@@ -10,11 +10,11 @@ actors.forEach((actor, index) => {
     actor.classList.add("movies");
 
      movies.forEach(movie => {
-      movies.classList.remove('grid');
-      movies.classList.add('hidden');
+      movie.classList.remove('flex');
+      movie.classList.add('hidden');
 
    })
     movies[index].classList.remove('hidden');
-     movies[index].classList.add('grid');
+     movies[index].classList.add('flex');
   })
 })
