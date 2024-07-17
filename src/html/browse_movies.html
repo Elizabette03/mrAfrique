@@ -18,7 +18,7 @@
 
     <title>mrAfrique - browse Movies</title>
   </head>
-  <body class="bg-bgpri">
+  <body class="bg-bgpri font-poppin">
      <!-- fixed gradient background -->
   <div class="fixed top-0 -z-50 h-screen w-screen bg-bgpri dark:bg-[radial-gradient(ellipse_40%_40%_at_50%_50%,rgba(31,38,5,1),rgba(255,255,255,0))]"></div>
 
@@ -49,16 +49,226 @@
   </nav>
 
   <div id="to-blur" class="">
-    <main class="grid grid-cols-5">
-      <div class="col-span-1"></div>
+
+     <!-- Hero section container -->
+
+     <div class="">
+      <div class="h-[50vh] overflow-hidden relative" style="-webkit-mask-image: linear-gradient(black, transparent);
+     mask-image: linear-gradient(black, transparent);">
+    <div class="bg-black/80 w-full absolute h-[50vh]">...</div>
+     <img src="/movie poster/background.png" alt="movie background" class="w-full">
+    </div>
+      <h1 class="w-[85%] mx-auto -my-20 text-txtpri text-5xl font-extrabold ">Browse Movies</h1>
+    </div>
+
+    <main class="w-[85%] my-48 mx-auto grid grid-cols-5 gap-16">
+      <div class="col-span-1 text-txtpri bg-sec-1 p-10 rounded-md h-fit sticky top-0">
+
+        <!-- Genre -->
+        <h3 class="text-2xl font-bold  text-accent-1">Genre</h3>
+        <div class="genre flex flex-col gap-4 my-9" >
+          
+          <!-- Action -->
+          <div class="text-xl">
+            <input type="checkbox" name="action" id="action" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="action" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Action</label>
+          </div>
+       
+          <!-- Adventure -->
+          <div class="text-xl">
+            <input type="checkbox" name="Adventure" id="Adventure" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Adventure" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Adventure</label>
+          </div>
+
+          <!-- Biography -->
+          <div class="text-xl">
+            <input type="checkbox" name="Biography" id="Biography" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Biography" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Biography</label>
+          </div>
+
+          <!-- Comedy -->
+          <div class="text-xl">
+            <input type="checkbox" name="Comedy" id="Comedy" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Comedy" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Comedy</label>
+          </div>
+
+          <!-- Documentary -->
+          <div class="text-xl">
+            <input type="checkbox" name="Documentary" id="Documentary" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Documentary" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Documentary</label>
+          </div>
+
+          <!-- Drama -->
+          <div class="text-xl">
+            <input type="checkbox" name="Drama" id="Drama" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Drama" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Drama</label>
+          </div>
+
+          <!-- Fantasy -->
+          <div class="text-xl">
+            <input type="checkbox" name="Fantasy" id="Fantasy" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Fantasy" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Fantasy</label>
+          </div>
+
+          <!-- Fiction -->
+          <div class="text-xl">
+            <input type="checkbox" name="Fiction" id="Fiction" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Fiction" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Fiction</label>
+          </div>
+
+          <!-- History -->
+          <div class="text-xl">
+            <input type="checkbox" name="History" id="History" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="History" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">History</label>
+          </div>
+
+          <!-- Horror -->
+          <div class="text-xl">
+            <input type="checkbox" name="Horror" id="Horror" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Horror" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Horror</label>
+          </div>
+
+          <!-- Mystery -->
+          <div class="text-xl">
+            <input type="checkbox" name="Mystery" id="Mystery" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Mystery" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Mystery</label>
+          </div>
+
+          <!-- Romance -->
+          <div class="text-xl">
+            <input type="checkbox" name="Romance" id="Romance" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Romance" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Romance</label>
+          </div>
+
+          <!-- Thriller -->
+          <div class="text-xl">
+            <input type="checkbox" name="Thriller" id="Thriller" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Thriller" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Thriller</label>
+          </div>
+
+          <!-- True Story -->
+          <div class="text-xl">
+            <input type="checkbox" name="Truestory" id="Truestory" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Truestory" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">True Story</label>
+          </div>
+        </div>
+       
+
+        <!-- Country -->
+        <h3 class="pt-8 text-2xl font-bold border-t-2 mr-full border-accent-2/30 text-accent-1 ">Country</h3>
+        <div class="flex flex-col gap-4 my-9">
+          
+          <!-- Botswana -->
+          <div class="text-xl">
+            <input type="checkbox" name="Bt" id="Bt" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Bt" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Botswana</label>
+          </div>
+       
+          <!-- Ghana -->
+          <div class="text-xl">
+            <input type="checkbox" name="Gh" id="Gh" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Gh" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Ghana</label>
+          </div>
+
+          <!-- Kenya -->
+          <div class="text-xl">
+            <input type="checkbox" name="Ke" id="Ke" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Ke" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Kenya</label>
+          </div>
+
+          <!-- Nigeria -->
+          <div class="text-xl">
+            <input type="checkbox" name="Ng" id="Ng" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Ng" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Nigeria</label>
+          </div>
+
+          <!-- Rwanda -->
+          <div class="text-xl">
+            <input type="checkbox" name="Rw" id="Rw" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Rw" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Rwanda</label>
+          </div>
+
+          <!-- South Africa -->
+          <div class="text-xl">
+            <input type="checkbox" name="SA" id="SA" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="SA" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">South Africa</label>
+          </div>
+
+          <!-- Zambia -->
+          <div class="text-xl">
+            <input type="checkbox" name="Zb" id="Zb" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="Zb" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">Zambia</label>
+          </div>
+
+        </div>
+       
+
+        <!-- Year -->
+        <h3 class="pt-8 text-2xl font-bold border-t-2 mr-full border-accent-2/30 text-accent-1 ">Year</h3>
+        <div class="flex flex-col gap-4 my-9">
+          
+          <!-- 2024 -->
+          <div class="text-xl">
+            <input type="checkbox" name="2024" id="2024" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="2024" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">2024</label>
+          </div>
+       
+          <!-- 2023 -->
+          <div class="text-xl">
+            <input type="checkbox" name="2023" id="2023" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="2023" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">2023</label>
+          </div>
+
+          <!-- 2022 -->
+          <div class="text-xl">
+            <input type="checkbox" name="2022" id="2022" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="2022" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">2022</label>
+          </div>
+
+          <!-- 2021 -->
+          <div class="text-xl">
+            <input type="checkbox" name="2021" id="2021" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="2021" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">2021</label>
+          </div>
+
+          <!-- 2010 - 2020  -->
+          <div class="text-xl">
+            <input type="checkbox" name="2010 - 2020" id="2010 - 2020" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="2010 - 2020" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">2010 - 2020</label>
+          </div>
+
+          <!-- 2000 - 2010 -->
+          <div class="text-xl">
+            <input type="checkbox" name="2000 - 2010" id="2000 - 2010" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="2000 - 2010" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">2000 - 2010</label>
+          </div>
+
+          <!-- 1990 - 2000 -->
+          <div class="text-xl">
+            <input type="checkbox" name="1990 - 2000" id="1990 - 2000" class="scale-150 bg-transparent accent-accent-2 bg-bgpri border-2 border-accent-1 text-txtpri">
+            <label for="1990 - 2000" class="p-4 font-semibold hover:scale-105 hover:translate-x-3 transition-all duration-300 hover:text-accent-2">1990 - 2000</label>
+          </div>
+
+        </div>
+       
+        
+      </div>
       <div class="col-span-4">
-        <div class="1"></div>
-        <div class="">
+        <div class="text-txtpri">
+          <label for="">Sort by : </label>
+          <select name="" id="">
+            <option value="">Popularity</option>
+            <option value="">Popularity</option>
+            <option value="">Popularity</option>
+            <option value="">Popularity</option>
+          </select>
+        </div>
+        <div class="movie flex flex-wrap gap-8">
 
           <!-- card -->
-          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/4th republic.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -69,9 +279,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama truStr hisFic w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama truStr hisFic w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/76.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -82,9 +292,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama  truStr w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama  truStr w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/93 days.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -95,9 +305,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ke Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ke Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/A better life.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -108,9 +318,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Adams apple-gh.jpeg" alt="Adams apple" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -121,9 +331,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Afamefuna.jpeg" alt="" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -134,9 +344,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Comedy w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Comedy w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Aki and Paw paw.jpeg" alt="Aki and Paw paw" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -147,9 +357,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Action Biography w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Action Biography w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Amina.jpeg" alt="Amina" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -160,9 +370,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama Fantasy w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama Fantasy w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Anikulapo.jpeg" alt="Anikulapo" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -173,9 +383,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Azali-gh.jpeg" alt="Azali" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -186,9 +396,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ke Comedy w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ke Comedy w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Big girl small world.jpeg" alt="Big girl small world" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -199,9 +409,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Romance Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Romance Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/big love.jpeg" alt="big love" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -212,9 +422,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama Crime Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama Crime Thriller w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/blood sisters.jpeg" alt="blood sisters" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -225,9 +435,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Adventure Drama Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Adventure Drama Thriller w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/blood vessel.jpeg" alt="blood vessel" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -238,9 +448,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Comedy Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Comedy Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/breaded life.jpeg" alt="breaded life" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -251,9 +461,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/breathe of life.jpeg" alt="breath of life" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -264,9 +474,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Action Crime Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Action Crime Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/brotherhood.jpeg" alt="brotherhood" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -277,9 +487,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Zb Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Zb Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Can you see us.jpeg" alt="Can you see us" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -290,9 +500,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Action Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Action Thriller w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/freetown-gh.jpeg" alt="freetown" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -303,9 +513,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Funmilayo.jpeg" alt="Funmilayo" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -316,9 +526,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Ng Action Thriller w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Ng Action Thriller w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Gangs of lagos.jpeg" alt="Gangs of lagos" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -329,9 +539,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Adventure w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Adventure w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/gen of Ashanti-gh.jpeg" alt="genesis of Ashanti" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -342,9 +552,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy History w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy History w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Ghana.jpeg" alt="A country called Ghana" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -355,9 +565,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/ghanian wedding.jpeg" alt="My Very Ghanian Wedding" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -367,12 +577,10 @@
             </a>
           </div>
 
-          <img src="" alt="" class="">
-
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Glamour girls.jpeg" alt="glamour girls" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -383,9 +591,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/God calling.jpeg" alt="God Calling" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -396,9 +604,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/God sleeps in rwanda.jpeg" alt="God sleeps in rwanda" class="Rw Documentary w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
           </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -409,9 +617,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Gods must be crazy.jpeg" alt="gods must be crazy" class="Bt Adventure Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -422,9 +630,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/gold coast lounge.jpeg" alt="gold coast lounge" class="Gh Drama History Romance w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -435,9 +643,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Half of a yellow sun.jpeg" alt="half of a yellow sun" class="Ng Drama Romance hisFic w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -448,9 +656,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Happiness.jpeg" alt="happiness" class="Sa Drama Romance w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -462,9 +670,9 @@
 
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Hotel rwanda.jpeg" alt="hotel rwanda" class="Rw Biography History Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -475,9 +683,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/house of secrets.jpeg" alt="house of secrets" class="Ng Mystery Thriller w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -488,9 +696,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/ijogbon.jpeg" alt="ijogbon" class="Ng Drama Thriller w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -501,9 +709,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Instant dad.jpeg" alt="instant dad" class="Ke Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -514,9 +722,9 @@
           </div>
         
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/inumber number.jpeg" alt="inumber" class="Sa Action Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -527,9 +735,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/ivory.png" alt="ivory" class="Gh Crime w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -540,9 +748,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Jagun Jagun.jpeg" alt="jagun jagun" class="Ng Drama History w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -553,9 +761,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Just in time-kenya.jpeg" alt="just in time-kenya" class="Ke Comedy Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
                 <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -566,9 +774,9 @@
             </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/kalahari-bot.jpeg" alt="kalahari-bot" class="Bt Documentary w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -579,9 +787,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Kandasamy.jpeg" alt="Kandasamy" class="Sa Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -592,9 +800,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/King of boys.jpeg" alt="king of boys" class="Ng Action Crime Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -605,9 +813,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/last lions-bots.jpeg" alt="last lions-bots" class="Bt Documentary w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -618,9 +826,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/light in the dark.jpeg" alt="light in the dark" class="Ng Thriller w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">         
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -631,9 +839,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/lionheart.jpeg" alt="lionheart" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -644,9 +852,9 @@
           </div>
 
            <!-- card -->
-           <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+           <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/living in bondage.jpeg" alt="living in bondage" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -657,9 +865,9 @@
           </div>
 
            <!-- card -->
-           <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+           <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Man of God.jpeg" alt="man of God" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -670,9 +878,9 @@
           </div>
 
            <!-- card -->
-           <div class=" Gh Comedy Drama Romance w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+           <div class=" Gh Comedy Drama Romance w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Mandela.jpeg" alt="mandela" class="Sa Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -683,9 +891,9 @@
           </div>
 
           <!-- card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/mandela-lwtf.jpeg" alt="mandela - long walk to freedom" class="w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -697,9 +905,9 @@
 
           <!-- Card -->
 
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Married to work.jpeg" alt="married to work" class="Ke Romance Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -710,9 +918,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/merry men.jpeg" alt="merry men" class="Ng Action Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -723,9 +931,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Mr and Mrs.jpeg" alt="mr and mrs" class="Ng Drama Romance w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -736,9 +944,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/my village people.jpeg" alt="my village people" class="Ng Horror w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -749,9 +957,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Nafsi.jpeg" alt="nafsi" class="Ke Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -763,9 +971,9 @@
 
         
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Nairobi half life.jpeg" alt="nairobi half life" class="Ke Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -776,9 +984,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Nigerian prince.jpeg" alt="nigerian prince" class="Ng Drama Thriller Crime w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -789,9 +997,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Nneka.jpeg" alt="nneka" class="Ng Horror Mystery w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -802,9 +1010,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/October 1.jpeg" alt="october 1" class="Ng Thriller Mystery w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -815,9 +1023,9 @@
           </div>   
           
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/okavango-bot.jpeg" alt="okavango-bot" class="Bt Documentary w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -828,9 +1036,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/ololade.jpeg" alt="ololade" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -841,9 +1049,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
               <img src="/movie poster/Oloture.jpeg" alt="Oloture" class="Ng Drama Crime w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
             </div>
             <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -854,9 +1062,9 @@
         </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Omugwo.jpeg" alt="Omugwo" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -867,9 +1075,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Orisa.jpeg" alt="Orisa" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -881,9 +1089,9 @@
           
           
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/rafiki.jpeg" alt="rafiki" class="Ke Romance Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -894,9 +1102,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Rattle snake.jpeg" alt="rattle snake" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -907,9 +1115,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/return of bey-gh.jpeg" alt="return of beyonce" class="Gh Romance Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -920,9 +1128,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/RHW of Nairobi.jpeg" alt="RHW of nairobi" class="Ke Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -933,9 +1141,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Sarafina.jpeg" alt="Sarafina" class="Sa Drama hisFic w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -946,9 +1154,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Shining star.jpeg" alt="shining star" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -959,9 +1167,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Sometimes in April.jpeg" alt="sometimes in april" class="Rw History Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -972,9 +1180,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/soweto love story.jpeg" alt="soweto love story" class="Sa Romance Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -985,9 +1193,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/taste of sin-ghana.jpeg" alt="a taste of sin" class="Gh Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -998,9 +1206,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/the curfew-gh.jpeg" alt="curfew" class="Gh Drama Thriller w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1011,9 +1219,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/The origin.jpeg" alt="the origin" class="Ng Horror Thriller w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1024,9 +1232,9 @@
           </div>   
         
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/tribe Called Judah.jpeg" alt="tribe called Judah" class="Ng Drama Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1037,9 +1245,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Tsotsi.jpeg" alt="Tsotsi" class="Sa Drama Crime w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1050,9 +1258,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Unexpected places.jpeg" alt="Unexpected places" class="Ng Drama Romance w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1063,9 +1271,9 @@
           </div>   
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Unmarried.jpeg" alt="Unmarried" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1076,9 +1284,9 @@
         </div>  
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Vanity.jpeg" alt="Vanity" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1089,9 +1297,9 @@
         </div>  
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/wedding party.jpeg" alt="wedding party" class="Ng Romance Comedy w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1102,9 +1310,9 @@
         </div>  
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Wildflower.jpeg" alt="Wildflower" class="Ng Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
@@ -1115,9 +1323,9 @@
         </div>  
 
           <!-- Card -->
-          <div class=" Sa Biography History Drama w-[250px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
+          <div class=" Sa Biography History Drama w-[210px] hover:shadow-[2px_4px_30px_0] hover:shadow-accent-2/30 group transition-all duration-300">
             <a href="" class="">
-              <div class="h-[300px] w-[250px] overflow-hidden ">
+              <div class="h-[300px] w-[210px] overflow-hidden ">
                 <img src="/movie poster/Yesterday.jpeg" alt="Yesterday" class="Sa Drama w-full h-full group-hover:scale-110 transition-all duration-300 object-cover object-center">
               </div>
               <div class="flex justify-between items-center py-4 px-2 bg-txtpri/20 backdrop-blur-sm h-20 gap-4">
