@@ -1102,6 +1102,7 @@ video {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 .h-28{
   height: 7rem;
 }
@@ -1114,6 +1115,8 @@ video {
   height: 80vh;
 }
 
+=======
+>>>>>>> e9fb628e5fef6c9452d1173552270a69b7b1f069
 .w-1\/4{
   width: 25%;
 }
@@ -1259,6 +1262,7 @@ video {
   width: 100vw;
 }
 
+<<<<<<< HEAD
 .w-32{
   width: 8rem;
 }
@@ -1267,6 +1271,8 @@ video {
   width: 7rem;
 }
 
+=======
+>>>>>>> e9fb628e5fef6c9452d1173552270a69b7b1f069
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -1417,10 +1423,13 @@ video {
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .items-center{
   align-items: center;
 }
 
+=======
+>>>>>>> e9fb628e5fef6c9452d1173552270a69b7b1f069
 .justify-center{
   justify-content: center;
 }
